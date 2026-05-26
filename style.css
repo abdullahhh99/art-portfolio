@@ -1,0 +1,112 @@
+/* 1. Page Background and Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* A soft light grey */
+  color: #333333; /* Dark grey text is easier to read than pure black */
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Navigation Bar Container */
+nav {
+  background-color: #222222; /* Dark, sleek background */
+  color: white;
+  padding: 15px 40px;
+  display: flex; /* This helps us place items side-by-side */
+  justify-content: space-between; /* Puts title on the left, links on the right */
+  align-items: center; /* Centers them vertically */
+}
+
+/* 3. Navigation Menu (Removing bullet points) */
+nav ul {
+  list-style-type: none; /* This deletes the ugly bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Navigation Links (Putting them in a row) */
+nav ul li {
+  display: inline; /* This makes them sit in a horizontal line */
+  margin-left: 20px; /* Adds space between each link */
+}
+
+nav a {
+  color: white; /* Makes the link text white */
+  text-decoration: none; /* Removes the blue underline */
+  font-weight: bold;
+}
+
+/* 5. Main Sections */
+section {
+  padding: 50px; /* Adds breathing room inside our sections */
+  text-align: center; /* Centers the headings and text */
+  background-color: white; 
+  margin: 20px auto; /* Adds space outside the sections and centers them */
+  border-radius: 10px; /* Rounds the corners of the white boxes */
+  max-width: 900px; /* Prevents sections from getting too wide on big screens */
+}
+
+/* 6. Gallery Layout */
+#gallery {
+  display: flex; /* A powerful tool to put things side-by-side */
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds a nice gap between the paintings */
+  flex-wrap: wrap; /* If the screen is small, images will drop to the next line */
+}
+
+#gallery img {
+  border-radius: 8px; /* Slightly rounded corners for your artwork */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a soft 3D shadow behind images */
+}
+
+/* 7. Contact Form Styling */
+form {
+  max-width: 400px;
+  margin: 0 auto; /* Centers the form inside the Contact section */
+  text-align: left; /* Keeps the "Name" and "Message" text aligned left */
+}
+
+input, textarea {
+  width: 100%; /* Makes the typing boxes fill the whole form width */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Gives a clean, light grey border */
+  border-radius: 5px;
+  font-family: inherit; /* Matches the font to the rest of the site */
+}
+
+button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; /* Changes your mouse to a "hand" icon when hovering */
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* 8. Hover Effects & Animations */
+
+/* Makes the navigation links change color when you touch them */
+nav a:hover {
+  color: #f39c12; /* A cool, warm orange color */
+}
+
+/* Tells the browser to make changes smoothly, not instantly */
+#gallery img {
+  transition: transform 0.3s ease; 
+}
+
+/* Zooms the artwork in slightly when you hover over it */
+#gallery img:hover {
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+/* Makes the contact button light up when hovered */
+button:hover {
+  background-color: #f39c12; 
+  color: black;
+  transition: background-color 0.3s ease;
+}
